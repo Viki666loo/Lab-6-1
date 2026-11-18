@@ -1,7 +1,7 @@
 :root {
-    --bs-primary-base: #795039;
-    --bs-primary-bg: #795039;
-    --bs-primary-fg: #795039;
+    --bs-primary-base: #855536;
+    --bs-primary-bg: #855536;
+    --bs-primary-fg: #855536;
     --bs-primary-contrast: #ffffff;
 }
 body {
@@ -26,4 +26,4 @@ h1, h2, h3, h4 {
     --bs-btn-hover-color: #ffffff;
     --bs-btn-hover-border-color: #663e27;
 }
-.card-body, .carousel{ background-color: #f6e3ca;}
+.card-body, .carousel, form{ background-color: #f6e3ca;}
