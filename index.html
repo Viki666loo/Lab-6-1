@@ -1,1 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Guangzhou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar md:navbar-expand bg-1">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Taste of Guangzhou</a>
 
+            <button class="navbar-toggler btn-icon" type="button" data-bs-toggle="drawer" data-bs-target="#menu" aria-label="Open menu">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" id="menu" aria-labelledby="menu-title">
+                <div class="drawer-header">
+                    <p class="drawer-title" id="menu-title">Menu</p>
+                    <button class="btn btn-icon" type="button" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+
+        <header class="text-center my-4">
+            <h1>Taste of Guangzhou</h1>
+            <p>Dim sum with friend</p>
+        </header>
+
+        <div class="carousel slide bg-white rounded p-4" id="food-slides">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/pic-4.jpg" width="300" class="img-fluid d-block mx-auto" alt="BBQ pork buns">
+                    <p class="text-center mt-3">Soft and fluffy BBQ Pork Buns</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/pic-5.jpg" width="300" class="img-fluid d-block mx-auto" alt="Siu mai dumplings">
+                    <p class="text-center mt-3">A dim sum favourite: Siu Mai</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/pic-6.jpg" width="300" class="img-fluid d-block mx-auto" alt="Har gow shrimp dumplings">
+                    <p class="text-center mt-3">Delicate shrimp dumplings: Har Gow</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <button class="btn-solid theme-primary" type="button" data-bs-target="#food-slides" data-bs-slide="prev">
+                    Previous
+                </button>
+                <button class="btn-solid theme-primary" type="button" data-bs-target="#food-slides" data-bs-slide="next">
+                    Next
+                </button>
+            </div>
+        </div>
+
+        <section class="my-4">
+            <h2 class="text-center mb-4">More Dim Sum to Try</h2>
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-1.jpg" class="card-img-top" alt="Golden slices of pan-fried turnip cake">
+
+                        <div class="card-body">
+                            <h3>Turnip Cake</h3>
+                            <p>Crispy outside and soft inside.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Made with Chinese radish and rice flour. It is steamed, sliced and pan-fried.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-1">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-1" aria-labelledby="title-1">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-1">Turnip Cake</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Try it warm with a little chilli sauce.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-2.jpg" class="card-img-top" alt="Chicken feet">
+
+                        <div class="card-body">
+                            <h3>Chicken Feet</h3>
+                            <p>Tender chicken feet with soy sauce.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Also called phoenix claws.
+                                        They are cooked until soft with a savoury sauce.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-2">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-2" aria-labelledby="title-2">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-2">Chicken Feet</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Take small bites and remove the bones as you eat.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-3.jpg" class="card-img-top" alt="Steamed pork ribs with black beans and peppers">
+
+                        <div class="card-body">
+                            <h3>Pork Ribs</h3>
+                            <p>Small pork ribs with black bean sauce.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        The ribs are cut into small pieces.
+                                        They are steamed with black beans and garlic.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-3">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-3" aria-labelledby="title-3">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-3">Pork Ribs</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Watch for the small bones. Try the sauce with rice.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-4.jpg" class="card-img-top" alt="BBQ pork buns">
+
+                        <div class="card-body">
+                            <h3>BBQ Pork Buns</h3>
+                            <p>Fluffy buns with a sweet and savoury filling.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        These steamed buns contain chopped barbecue pork.
+                                        The dough is soft and slightly sweet.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-4">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-4" aria-labelledby="title-4">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-4">BBQ Pork Buns</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Remove any paper underneath. Let the hot filling cool a little.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-5.jpg" class="card-img-top" alt="Siu mai dumplings">
+
+                        <div class="card-body">
+                            <h3>Siu Mai</h3>
+                            <p>Open-top dumplings with a juicy filling.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Siu mai usually contains pork and shrimp.
+                                        A thin yellow wrapper holds the filling.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-5">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-5" aria-labelledby="title-5">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-5">Siu Mai</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Enjoy it on its own or add a little soy sauce.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 md:col-6 lg:col-4">
+                    <article class="card h-100">
+                        <img src="images/pic-6.jpg" class="card-img-top" alt="Har Gow Shrimp dumplings">
+
+                        <div class="card-body">
+                            <h3>Har Gow</h3>
+                            <p>Delicate dumplings filled with shrimp.</p>
+
+                            <div class="accordion">
+                                <details class="accordion-item">
+                                    <summary class="accordion-header">Details</summary>
+                                    <div class="accordion-body">
+                                        Har gow has a thin, slightly chewy wrapper.
+                                        You can see the shrimp through the steamed skin.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <button class="btn-solid theme-primary mt-3" type="button" data-bs-toggle="dialog" data-bs-target="#food-6">
+                                Serving tip
+                            </button>
+
+                            <dialog class="dialog" id="food-6" aria-labelledby="title-6">
+                                <div class="dialog-header">
+                                    <h4 class="dialog-title" id="title-6">Har Gow</h4>
+                                </div>
+                                <div class="dialog-body">
+                                    <p>Pick it up gently so the thin wrapper does not tear.</p>
+                                </div>
+                                <div class="dialog-footer">
+                                    <button class="btn-solid theme-primary" type="button" data-bs-dismiss="dialog">
+                                        Close
+                                    </button>
+                                </div>
+                            </dialog>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-1 text-center p-4">
+        <p>
+            <a href="contact.html">Contact us if you have any questions</a>
+        </p>
+        <p class="mb-0">&copy; 2026 Taste of Guangzhou</p>
+    </footer>
+
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

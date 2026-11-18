@@ -1,1 +1,29 @@
-
+:root {
+    --bs-primary-base: #795039;
+    --bs-primary-bg: #795039;
+    --bs-primary-fg: #795039;
+    --bs-primary-contrast: #ffffff;
+    --bs-primary-focus-ring: #795039;
+    --bs-bg-body: #faf6ef;
+    --bs-fg-body: #514238;
+    --bs-bg-1: #f0e2d0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#fff3e2;
+    color:#594332;
+}
+h1, h2, h3, h4 {
+    font-family: Georgia, serif;
+    color: #65432e;
+}
+.btn-solid.theme-primary {
+    --bs-btn-bg: #795039;
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #795039;
+}
+.btn-solid.theme-primary:hover {
+    --bs-btn-hover-bg: #5e3c29;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-border-color: #5e3c29;
+}
