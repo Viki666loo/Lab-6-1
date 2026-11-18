@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
     color: #65432e;
 }
 .navbar, footer{
-    background-color: efd3ae;
+    background-color: #efd3ae;
 }
 .btn-solid.theme-primary {
     --bs-btn-bg: #855536;
@@ -26,3 +26,4 @@ h1, h2, h3, h4 {
     --bs-btn-hover-color: #ffffff;
     --bs-btn-hover-border-color: #663e27;
 }
+.card-body, .carousel{ background-color: #f6e3ca;}
